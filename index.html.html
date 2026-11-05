@@ -1,0 +1,418 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 75px;
+        }
+
+        body {
+            padding-top: 56px;
+        }
+
+        .hero {
+            background-color: #eaf2ff;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        .project-img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .skill-card {
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#beranda">
+                My Portfolio
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyek">Proyek</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="hero py-5 text-center">
+
+        <div class="container py-4">
+
+            <img
+                src="rara (3).jpeg"
+                alt="Foto profil"
+                class="profile-img rounded-circle mb-4">
+
+            <h1 class="fw-bold display-5">
+                Halo, nama saya Zahra. Saya merupakan mahasiswa Teknologi Informasi
+            </h1>
+
+            <p class="lead text-secondary mt-3">
+                Web Development Enthusiast | Technology Learner
+            </p>
+
+            <p class="mx-auto mb-4" style="max-width: 650px;">
+                Saya tertarik mempelajari teknologi, pemrograman,
+                dan pengembangan website. Saya terus mengembangkan
+                kemampuan untuk menciptakan solusi digital yang bermanfaat.
+            </p>
+
+            <a href="#proyek" class="btn btn-primary btn-lg me-2">
+                Lihat Proyek
+            </a>
+
+            <a href="#kontak" class="btn btn-outline-primary btn-lg">
+                Hubungi Saya
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT / SKILLS SECTION -->
+    <section id="tentang" class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tentang Saya</h2>
+
+                <p class="text-secondary">
+                    Kenali saya dan bidang teknologi yang sedang saya pelajari.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- SKILL 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card skill-card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+
+                            <h3 class="h5 fw-bold">Web Development</h3>
+
+                            <p class="text-secondary mb-0">
+                                Mempelajari cara membuat website menggunakan
+                                HTML dan Bootstrap untuk menghasilkan
+                                halaman yang menarik dan responsif.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKILL 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card skill-card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+
+                            <h3 class="h5 fw-bold">Programming</h3>
+
+                            <p class="text-secondary mb-0">
+                                Mengembangkan kemampuan berpikir logis
+                                melalui latihan pemrograman dan penyelesaian
+                                masalah menggunakan kode.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKILL 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card skill-card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+
+                            <h3 class="h5 fw-bold">Cyber Security</h3>
+
+                            <p class="text-secondary mb-0">
+                                Tertarik mempelajari keamanan sistem,
+                                perlindungan data, dan cara menjaga
+                                keamanan informasi digital.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section id="proyek" class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Proyek Saya</h2>
+
+                <p class="text-secondary">
+                    Beberapa contoh proyek dan latihan yang saya kerjakan.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- PROJECT 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://placehold.co/600x400/2563eb/ffffff?text=Website+Project"
+                            class="card-img-top project-img"
+                            alt="Website project">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <h3 class="h5 card-title fw-bold">
+                                Website Landing Page
+                            </h3>
+
+                            <p class="card-text text-secondary">
+                                Membuat halaman website sederhana
+                                menggunakan HTML dan Bootstrap dengan
+                                navigasi, konten, dan layout responsif.
+                            </p>
+
+                            <a href="#kontak"
+                                class="btn btn-outline-primary mt-auto align-self-start">
+                                Lihat Detail
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PROJECT 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://placehold.co/600x400/198754/ffffff?text=C+Programming"
+                            class="card-img-top project-img"
+                            alt="Programming project">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <h3 class="h5 card-title fw-bold">
+                                Program Bahasa C
+                            </h3>
+
+                            <p class="card-text text-secondary">
+                                Membuat program sederhana untuk melatih
+                                penggunaan variabel, percabangan,
+                                perulangan, dan logika pemrograman.
+                            </p>
+
+                            <a href="#kontak"
+                                class="btn btn-outline-primary mt-auto align-self-start">
+                                Lihat Detail
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PROJECT 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <img
+                            src="https://placehold.co/600x400/6f42c1/ffffff?text=UI+Design"
+                            class="card-img-top project-img"
+                            alt="UI design project">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <h3 class="h5 card-title fw-bold">
+                                Konsep Desain Aplikasi
+                            </h3>
+
+                            <p class="card-text text-secondary">
+                                Menyusun konsep antarmuka aplikasi dengan
+                                memperhatikan struktur informasi,
+                                keterbacaan, dan kemudahan penggunaan.
+                            </p>
+
+                            <a href="#kontak"
+                                class="btn btn-outline-primary mt-auto align-self-start">
+                                Lihat Detail
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INTERACTIVE BUTTON & BOOTSTRAP ALERT -->
+    <section class="py-5">
+
+        <div class="container text-center">
+
+            <h2 class="fw-bold">Mari Terhubung!</h2>
+
+            <p class="text-secondary mt-3">
+                Klik tombol berikut untuk melihat informasi kontak saya.
+            </p>
+
+            <button type="button"
+                class="btn btn-success btn-lg"
+                onclick="tampilkanKontak()">
+
+                Tampilkan Informasi Kontak
+
+            </button>
+
+            <div id="alertKontak" class="mt-4 text-start"></div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="kontak" class="py-5 bg-dark text-white">
+
+        <div class="container text-center">
+
+            <h2 class="fw-bold">Kontak Saya</h2>
+
+            <p class="text-white-50 mt-3">
+                Jangan ragu untuk menghubungi saya untuk berdiskusi
+                atau berkolaborasi dalam bidang teknologi.
+            </p>
+
+            <p class="mb-2">
+                Instagram:
+                <a href="https://www.instagram.com/puara32/" class="text-info">
+                    puara32
+                </a>
+            </p>
+
+            <p class="mb-0">
+                GitHub:
+                <a href="https://github.com/" target="_blank"
+                    rel="noopener noreferrer" class="text-info">
+                    Kunjungi GitHub
+                </a>
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white text-center py-3">
+
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 My Portfolio.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- JavaScript Function -->
+    <script>
+        function tampilkanKontak() {
+
+            document.getElementById("alertKontak").innerHTML = `
+                <div class="alert alert-success alert-dismissible fade show"
+                    role="alert">
+
+                    <h5 class="alert-heading">
+                        Terima kasih sudah berkunjung!
+                    </h5>
+
+                    <p class="mb-0">
+                        Silakan hubungi saya melalui instagram puara32 untuk berdiskusi
+                        atau berkolaborasi.
+                    </p>
+
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="alert"
+                        aria-label="Close">
+                    </button>
+
+                </div>
+            `;
+        }
+    </script>
+
+</body>
+</html>
+```
